@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Div-uri aliniate</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .fereastra {
+      width: 320px;
+      background-color: white;
+      border: 4px solid black;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    .sus {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sus .linie1,
+    .sus .linie2 {
+      height: 40px;
+      width: 100%;
+    }
+
+    .linie1 {
+      background-color: cyan;
+      border-bottom: 2px solid yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .linie2 {
+      background-color: pink;
+    }
+
+    .mijloc-wrapper {
+      border: 2px dashed red;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .mijloc {
+      display: flex;
+      gap: 10px;
+      height: 200px;
+    }
+
+    .stanga {
+      flex: 1;
+      background-color: yellow;
+      border: 2px solid red;
+    }
+
+    .dreapta {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .dreapta div {
+      flex: 1;
+      background-color: violet;
+      border: 2px solid red;
+    }
+
+    .jos {
+      height: 50px;
+      background-color: plum;
+      border-top: 2px solid red;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="fereastra">
+    <div class="sus">
+      <div class="linie1">Pagina cu div</div>
+      <div class="linie2"></div>
+    </div>
+
+    <div class="mijloc-wrapper">
+      <div class="mijloc">
+        <div class="stanga"></div>
+        <div class="dreapta">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jos"></div>
+  </div>
+</body>
+</html>

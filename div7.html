@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Fereastră Schiță Finală</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .fereastra {
+      width: 320px;
+      background-color: #ffffff;
+      border: 5px solid #000000;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bordura-sus {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .spatiu-sus1,
+    .spatiu-sus2 {
+      height: 30px;
+      background-color: #d3d3d3;
+      border: 2px solid #555;
+    }
+
+    .mijloc-wrapper {
+      border: 2px dashed #555;
+      padding: 10px;
+    }
+
+    .mijloc {
+      display: flex;
+      gap: 10px;
+      height: 200px;
+    }
+
+    .stanga {
+      flex: 1;
+      background-color: #add8e6;
+      border: 2px solid #000;
+    }
+
+    .dreapta {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .dreapta div {
+      flex: 1;
+      background-color: #90ee90;
+      border: 2px solid #000;
+    }
+
+    .bordura-jos {
+      height: 40px;
+      background-color: #cccccc;
+      border: 2px solid #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="fereastra">
+    <div class="bordura-sus">
+      <div class="spatiu-sus1"></div>
+      <div class="spatiu-sus2"></div>
+    </div>
+    
+    <div class="mijloc-wrapper">
+      <div class="mijloc">
+        <div class="stanga"></div>
+        <div class="dreapta">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bordura-jos"></div>
+  </div>
+</body>
+</html>
